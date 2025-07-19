@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "22222222-2222-2222-2222-222222222222",
+    "name": "Banking API Collection - SWIFT Style",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Check Account Balance",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.bankexample.com/accounts/12345/balance",
+          "protocol": "https",
+          "host": ["api", "bankexample", "com"],
+          "path": ["accounts", "12345", "balance"]
+        }
+      }
+    },
+    {
+      "name": "Initiate SWIFT Transfer",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"from_account\": \"12345\", \"to_account\": \"67890\", \"amount\": 5000, \"currency\": \"USD\", \"swift_code\": \"ICICINBBXXX\"}"
+        },
+        "url": {
+          "raw": "https://api.bankexample.com/payments/swift",
+          "protocol": "https",
+          "host": ["api", "bankexample", "com"],
+          "path": ["payments", "swift"]
+        }
+      }
+    }
+  ]
+}
