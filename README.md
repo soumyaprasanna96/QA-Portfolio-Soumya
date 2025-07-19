@@ -1,5 +1,3 @@
-# QA-Portfolio-Soumya
- “My Manual and API Testing Projects”
 # QA Portfolio – Soumya Prasanna Billa
 
 Welcome! I'm a QA Engineer with 5+ years of experience in Manual, API, and Performance Testing.  
